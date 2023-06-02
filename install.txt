@@ -1,0 +1,6 @@
+npx nuxi@latest init my-nuxt
+
+cd my-nuxt
+npm install
+npm run dev
+
