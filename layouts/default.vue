@@ -13,21 +13,29 @@
         </header>
 
         <!-- page content -->
-        <div>
+        <div class="content">
             <slot />
         </div>
     </div>
 </template>
 
 <style scoped>
+    html, body { margin: 0;padding: 0;}
     header {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        background-color:cadetblue;
+        padding: 0 12px;
+        box-shadow: 1px 1px 2px black;
     }
     ul {
-        
+        display: flex;
+        list-style: none;
+        gap: 12px;
     }
+
+    .content { padding: 12px;}
 
     .router-link-exact-active {
         color: red;
